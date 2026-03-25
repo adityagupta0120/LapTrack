@@ -1,0 +1,131 @@
+
+body {
+    margin: 0;
+    overflow: hidden;   /* removes both vertical & horizontal scrolling */
+}
+
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: yellow;
+    text-decoration: none;
+    position: fixed;
+    height: 60px;
+
+
+
+
+}
+
+nav .logo{
+    width: 300px;
+    font-size: 70px;
+    color: #fff;
+    background-color: transparent;
+    height: 90px;
+    margin-top: 30px;
+
+    
+
+
+
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+
+
+}
+
+.content{
+    color: black;
+    text-align: center;
+    position: fixed;
+}
+
+.content h1{
+    font-size: 160px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.lapp{
+    color: red;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid black ;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+
+}
+.btn{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+    color: black;
+    
+}
+
+.btn:hover{
+    background-color: yellow;
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.backvd{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+
+}
+
+
+.backvd {
+    position: fixed;       /* stays in place */
+    top: 0;
+    left: 0;
+    width: 100vw;          /* full viewport width */
+    height: 100vh;         /* full viewport height */
+    object-fit: cover;     /* fills screen without distortion */
+    z-index: -1;           /* sends it behind content */
+}
+
+.heading{
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
