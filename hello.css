@@ -1,7 +1,8 @@
-
+*{
+    box-sizing: border-box;
+}
 body {
     margin: 0;
-    overflow: hidden;
 }
 html, body {
     margin: 0;
@@ -46,7 +47,8 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 22px;
+    font-family: 'Cinzel', serif;
 }
 .content{
     color: black;
@@ -74,6 +76,8 @@ nav ul li a{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: white;
     color: black;
+    transition:all 0.5s ease;
+
     
 }
 
@@ -81,15 +85,10 @@ nav ul li a{
     background-color: yellow;
     color: black;
     border: 2px solid rgb(0, 0, 0);
-    transition: 0.5s;
     transform: scale(1.08);
+
 }
-.backvd{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
+
 .backvd {
     position: fixed;    
     top: 0;
