@@ -76,7 +76,7 @@ nav ul li a{
 }
 
 .content h1{
-    font-size: 160px;
+    font-size: 130px;
     margin-bottom: 10px;
     font-weight: 600;
 }
@@ -116,13 +116,13 @@ nav ul li a{
 
 
 .backvd {
-    position: fixed;       /* stays in place */
+    position: fixed;    
     top: 0;
     left: 0;
-    width: 100vw;          /* full viewport width */
-    height: 100vh;         /* full viewport height */
-    object-fit: cover;     /* fills screen without distortion */
-    z-index: -1;           /* sends it behind content */
+    width: 100vw;        
+    height: 100vh;    
+    object-fit: cover;   
+    z-index: -1;        
 }
 
 .heading{

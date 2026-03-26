@@ -1,0 +1,143 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>F1 Teams</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 20px 0;
+      font-size: 2.5rem;
+      color: #ff1e00;
+    }
+
+    #team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: #1c1c1c;
+      padding: 20px;
+      width: 440px;
+      border-radius: 12px;
+      transition: 0.3s;
+      border: 1px solid #333;
+    }
+
+    .card:hover {
+      transform: scale(1.08) translateY(-5px);
+      box-shadow: 0 15px 30px rgba(255, 30, 0, 0.4);
+    }
+
+    .card h2 {
+      color: #ff1e00;
+      font-size: 1.3rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #ff1e00;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🏎️ Formula 1 Teams</h1>
+
+  <div id="team-container"></div>
+
+  <script>
+    const container = document.getElementById("team-container");
+
+    fetch('https://api.jolpi.ca/ergast/f1/constructors')
+      .then(res => res.json())
+      .then(data => {
+        const teams = data.MRData.ConstructorTable.Constructors;
+
+        teams.forEach(team => {
+          const card = `
+            <div class="card">
+              <h2>${team.name}</h2>
+              <p>Nationality: ${team.nationality}</p>
+              <a href="${team.url}" target="_blank">Learn More</a>
+            </div>
+          `;
+          container.innerHTML += card;
+        });
+      });
+  </script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Teams</title>
+
+    <link rel="stylesheet" href="teams.css">
+</head>
+
+<body>
+
+    <!-- 🎥 Background Video -->
+    <video class="backvd" autoplay muted loop>
+        <source src="../hii/ferrari wallpaer  2.mp4" type="video/mp4">
+    </video>
+
+    <!-- 🔝 Navbar -->
+    <nav>
+        <img src="../hii/logo3.png" class="logo">
+
+        <ul>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Drivers</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Standings</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🏎️ Teams Section -->
+    <h1 class="heading">🏎️ F1 Teams</h1>
+    <input type="text" id="searchInput" placeholder="Search your favorite team..." />
+
+    <div id="team-container"></div>
+
+
+    <script src="teams.js"></script>
+    <footer>
+        <p>Copyright &copy; 2024 LapTrack. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
