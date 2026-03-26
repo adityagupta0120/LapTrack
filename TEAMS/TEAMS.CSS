@@ -11,9 +11,6 @@ body::before {
     background: rgba(0,0,0,0.4);
     z-index: -1;
 }
-
-
-/* backgroung viedo css*/
 .backvd {
     position: fixed;
     top: 0;
@@ -23,11 +20,6 @@ body::before {
     object-fit: cover;
     z-index: -1;
 }
-
- 
-
-
-/* NAV BAR css*/
 nav{
     width: 100%;
     position: absolute;
@@ -73,8 +65,6 @@ nav ul li a{
 
 
 }
-
-/* Heading CSS */
 .heading {
     text-align: center;
     font-size: 70px;
