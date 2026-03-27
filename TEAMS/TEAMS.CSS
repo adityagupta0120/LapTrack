@@ -30,7 +30,7 @@ nav{
     justify-content: space-between;
     color: yellow;
     text-decoration: none;
-    position: fixed;
+
     height: 60px;
 }
 nav .logo{
