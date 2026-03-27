@@ -12,7 +12,7 @@ function displayTeams(teams) {
         <h2>${team.name}</h2>
         <p>${team.nationality}</p>
 
-        <a href="${team.url}" target="_blank">Learn More</a>
+        <a href="${team.url}" target="_blank">Know More</a>
       </div>
     `;
 

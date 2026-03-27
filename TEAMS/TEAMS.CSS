@@ -30,14 +30,9 @@ nav{
     justify-content: space-between;
     color: yellow;
     text-decoration: none;
-
+    position: fixed;
     height: 60px;
-
-
-
-
 }
-
 nav .logo{
     width: 300px;
     font-size: 70px;
@@ -45,27 +40,20 @@ nav .logo{
     background-color: transparent;
     height: 90px;
     margin-top: 30px;
-
-    
-
-
-
 }
-
 nav ul li{
     list-style: none;
     display: inline-block;
     margin: 0 40px;
 }
-
 nav ul li a{
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Cinzel', serif;
-
-
 }
+
+
 .heading {
     text-align: center;
     font-size: 70px;
@@ -91,7 +79,7 @@ nav ul li a{
     text-align: center;
     color: white;
     backdrop-filter: blur(10px);
-    border: 2px solid,whitesmoke;
+    border: 2px solid,rgb(162, 31, 31);
     text-decoration: none;
 }
 
@@ -102,10 +90,7 @@ nav ul li a{
     box-shadow: 0 0 20px rgba(255, 30, 0, 0.7);
 }
 
-.card img {
-    width: 120px;
-    margin-bottom: 10px;
-}
+
 
 
 #searchInput {
@@ -130,14 +115,19 @@ nav ul li a{
     color: #ccc;
 }
 .card h2 {
-    color: #ff1e00;
+    color: rgb(198, 43, 43);
 }
 .card p {
-    color: #ddd;
+    color: white;
 }
 .card a{
     text-decoration: none;
-    color: yellow;
+    color: #aaa;
+    background-color: #aaa;
+    padding: 4px;
+    border: red;
+    border-radius: 4px;
+    color: black;
 }
 
 footer{
@@ -146,4 +136,55 @@ footer{
     background-color: transparent;
     color: white;
     margin-bottom: 0px;
+}
+
+
+/* Mobile-Friendly Media Queries */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .heading { font-size: 45px; }
+    nav .logo { width: 150px; }
+    nav ul li a { font-size: 16px; }
+    .card { width: 250px; }
+    #searchInput { width: 250px; }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul {
+        display: none; /* hide links initially */
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        background: rgba(0,0,0,0.8);
+        border-radius: 8px;
+        padding: 10px 0;
+    }
+    nav ul.show {
+        display: flex; /* show when active */
+    }
+    nav ul li { margin: 10px 0; text-align: center; }
+    nav .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 28px;
+        color: white;
+    }
+    .heading { font-size: 35px; margin-top: 50px; }
+    .btn { font-size: 16px; padding: 10px 20px; }
+    .card { width: 90%; margin: 10px auto; }
+    #searchInput { width: 90%; }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    .heading { font-size: 28px; margin-top: 40px; }
+    nav .logo { width: 120px; }
+    .btn { font-size: 14px; padding: 8px 15px; }
 }

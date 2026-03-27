@@ -1,0 +1,172 @@
+/* ===== GLOBAL RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    color: white;
+}
+
+/* ===== BACKGROUND VIDEO ===== */
+.backvd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: yellow;
+    text-decoration: none;
+    position: fixed;
+    height: 60px;
+}
+nav .logo{
+    width: 300px;
+    font-size: 70px;
+    color: #fff;
+    background-color: transparent;
+    height: 90px;
+    margin-top: 30px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Cinzel', serif;
+}
+
+/* ===== DRIVER HEADER ===== */
+.driver-header {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.driver-header h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+/* SEARCH */
+#search {
+    padding: 10px 15px;
+    width: 260px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+/* ===== DRIVER GRID ===== */
+#driver-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* ===== DRIVER CARD (HUMAN + PREMIUM) ===== */
+.driver-card {
+    background: rgba(20, 20, 20, 0.85);
+    backdrop-filter: blur(8px);
+
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* SUBTLE HOVER */
+.driver-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.7);
+    border-color: rgba(255,0,0,0.4);
+}
+
+
+/* ===== IMAGE ===== */
+.driver-card img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 2px solid rgba(255,255,255,0.2);
+    margin-bottom: 12px;
+
+    transition: 0.3s;
+}
+
+.driver-card:hover img {
+    transform: scale(1.05);
+}
+
+/* ===== TEXT ===== */
+.driver-card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.driver-card p {
+    font-size: 13px;
+    color: #aaa;
+    margin: 4px 0;
+}
+
+/* DRIVER NUMBER */
+.driver-card p:nth-child(4) {
+    color: #ff4d4d;
+    font-weight: 600;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .driver-header h1 {
+        font-size: 28px;
+    }
+
+    #search {
+        width: 200px;
+    }
+}
