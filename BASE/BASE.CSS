@@ -49,6 +49,16 @@ nav ul li a{
     color: #fff;
     font-size: 22px;
     font-family: 'Cinzel', serif;
+    color: white;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    
+}
+nav ul li a:hover {
+  color: red;
+  border-bottom: 2px solid red;
+  text-decoration: none;
+  transform: scale(1.08);
 }
 
 .btn{
