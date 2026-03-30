@@ -7,4 +7,5 @@ team page done
 searching done in team api 
 api integrated in team page 
 
-home pade onclick function done 
+home page onclick function done 
+
