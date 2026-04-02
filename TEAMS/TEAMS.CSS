@@ -76,7 +76,7 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 60px;
     padding: 40px;
 }
 
@@ -84,13 +84,16 @@ nav ul li a:hover {
     background: rgba(0, 0, 0, 0.75);
     padding: 20px;
     width: 300px;
+    height: 150px;
     border-radius: 12px;
     transition: 0.3s;
     text-align: center;
     color: white;
     backdrop-filter: blur(10px);
-    border: 2px solid,rgb(162, 31, 31);
+    border: 2px solid,rgb(215, 194, 194);
     text-decoration: none;
+    text-align: center;
+    justify-content: center;
 }
 
 
@@ -118,14 +121,14 @@ nav ul li a:hover {
 #searchInput {
     background: rgba(0,0,0,0.6);
     color: white;
-    border: 1px solid #ff1e00;
+    border: 1px solid #ffffff;
 }
 
 #searchInput::placeholder {
     color: #ccc;
 }
 .card h2 {
-    color: rgb(198, 43, 43);
+    color: rgb(219, 199, 199);
 }
 .card p {
     color: white;
@@ -197,4 +200,16 @@ footer{
     .heading { font-size: 28px; margin-top: 40px; }
     nav .logo { width: 120px; }
     .btn { font-size: 14px; padding: 8px 15px; }
+}
+
+.card {
+  background: linear-gradient(270deg, #000000, #450707, #000000);
+  background-size: 600% 600%;
+  animation: grad 8s ease infinite;
+  border-radius: 12px; /* optional but looks clean */
+}
+@keyframes grad {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }

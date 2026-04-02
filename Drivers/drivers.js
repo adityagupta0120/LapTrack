@@ -1,0 +1,244 @@
+// const driverList=[
+    
+//   {
+//     "name": "Max Verstappen",
+//     "code": "VER",
+//     "team": "Red Bull",
+//     "nationality": "Dutch",
+//     "image": "images/verstappen.png",
+//     "done": true
+//   },
+//   {
+//     "name": "Sergio Perez",
+//     "code": "PER",
+//     "team": "Red Bull",
+//     "nationality": "Mexican",
+//     "image": "images/perez.png",
+//     "done": true
+
+//   },
+//   {
+//     "name": "Lewis Hamilton",
+//     "code": "HAM",
+//     "team": "Mercedes",
+//     "nationality": "British",
+//     "image": "images/hamilton.png"
+//   },
+//   {
+//     "name": "George Russell",
+//     "code": "RUS",
+//     "team": "Mercedes",
+//     "nationality": "British",
+//     "image": "images/russell.png",
+//     "done": true
+//   },
+//   {
+//     "name": "Charles Leclerc",
+//     "code": "LEC",
+//     "team": "Ferrari",
+//     "nationality": "Monegasque",
+//     "image": "images/leclerc.png",
+//     "done": true
+
+//   },
+//   {
+//     "name": "Carlos Sainz",
+//     "code": "SAI",
+//     "team": "Ferrari",
+//     "nationality": "Spanish",
+//     "image": "images/sainz.png",
+//     "done": true
+
+//   },
+//   {
+//     "name": "Lando Norris",
+//     "code": "NOR",
+//     "team": "McLaren",
+//     "nationality": "British",
+//     "image": "images/norris.png",
+//     "done": true
+//   },
+//   {
+//     "name": "Oscar Piastri",
+//     "code": "PIA",
+//     "team": "McLaren",
+//     "nationality": "Australian",
+//     "image": "images/piastri.png",
+//     "done": true
+//   },
+//   {
+//     "name": "Fernando Alonso",
+//     "code": "ALO",
+//     "team": "Aston Martin",
+//     "nationality": "Spanish",
+//     "image": "images/alonso.png",
+//     "done": false
+//   },
+//   {
+//     "name": "Lance Stroll",
+//     "code": "STR",
+//     "team": "Aston Martin",
+//     "nationality": "Canadian",
+//     "image": "images/stroll.png"
+//   },
+//   {
+//     "name": "Esteban Ocon",
+//     "code": "OCO",
+//     "team": "Alpine",
+//     "nationality": "French",
+//     "image": "images/ocon.png",
+//     "done": true
+//   },
+//   {
+//     "name": "Pierre Gasly",
+//     "code": "GAS",
+//     "team": "Alpine",
+//     "nationality": "French",
+//     "image": "images/gasly.png",
+//     "done": true
+//   },
+//   {
+//     "name": "Valtteri Bottas",
+//     "code": "BOT",
+//     "team": "Kick Sauber",
+//     "nationality": "Finnish",
+//     "image": "images/bottas.png"
+//   },
+//   {
+//     "name": "Zhou Guanyu",
+//     "code": "ZHO",
+//     "team": "Kick Sauber",
+//     "nationality": "Chinese",
+//     "image": "images/zhou.png",
+//     "done": true
+//   },
+//   {
+//     "name": "Kevin Magnussen",
+//     "code": "MAG",
+//     "team": "Haas",
+//     "nationality": "Danish",
+//     "image": "images/magnussen.png",
+//     "done": true
+//   },
+//   {
+//     "name": "Nico Hulkenberg",
+//     "code": "HUL",
+//     "team": "Haas",
+//     "nationality": "German",
+//     "image": "images/hulkenberg.png",
+//     "done": true
+//   },
+//   {
+//     "name": "Yuki Tsunoda",
+//     "code": "TSU",
+//     "team": "RB",
+//     "nationality": "Japanese",
+//     "image": "images/tsunoda.png"
+
+//   },
+//   {
+//     "name": "Daniel Ricciardo",
+//     "code": "RIC",
+//     "team": "RB",
+//     "nationality": "Australian",
+//     "image": "images/ricciardo.png"
+//   },
+//   {
+//     "name": "Alexander Albon",
+//     "code": "ALB",
+//     "team": "Williams",
+//     "nationality": "Thai",
+//     "image": "images/albon.png",
+//     "done": true
+//   },
+//   {
+//     "name": "Logan Sargeant",
+//     "code": "SAR",
+//     "team": "Williams",
+//     "nationality": "American",
+//     "image": "images/sargeant.png",
+//     "done":true
+//   },
+//   {
+//     "name": "Kimi Antonelli",
+//     "code": "ANT",
+//     "team": "Mercedes",
+//     "nationality": "Italian",
+//     "image": "images/antonelli.png"
+//   },
+//   {
+//     "name": "Oliver Bearman",
+//     "code": "BEA",
+//     "team": "Ferrari",
+//     "nationality": "British",
+//     "image": "images/bearman.png"
+//   },
+//   {
+//     "name": "Jack Doohan",
+//     "code": "DOO",
+//     "team": "Alpine",
+//     "nationality": "Australian",
+//     "image": "images/doohan.png"
+//   },
+//   {
+//     "name": "Theo Pourchaire",
+//     "code": "POU",
+//     "team": "Sauber",
+//     "nationality": "French",
+//     "image": "images/pourchaire.png"
+//   },
+//   {
+//     "name": "Felipe Drugovich",
+//     "code": "DRU",
+//     "team": "Aston Martin",
+//     "nationality": "Brazilian",
+//     "image": "images/drugovich.png"
+//   }
+// ]
+
+
+
+// const cont = document.getElementById("driver-container");
+// function display(driverList) {
+//   let html = "";
+
+//   driverList.forEach(driver => {
+//     html += `
+//       <div class="card">
+//         <h2>${driver.name}</h2>
+//         <p>${driver.nationality}</p>
+//         <img src="${driver.image}" alt="${driver.name}" class="driver-image">
+//       </div>
+//     `;
+//   });
+
+//   cont.innerHTML = html;
+// }
+
+// display(driver);
+
+
+fetch("drivers.json")
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById("drivers");
+
+    data.forEach(driver => {
+      const card = document.createElement("div");
+
+      card.innerHTML = `
+      <div class="divv">
+        <img src="./${driver.image}" width="200" height="160"/>
+        
+
+        <h2>${driver.name}</h2>
+        <p>Team: ${driver.team}</p>
+        <p>Nationality: ${driver.nationality}</p>
+        <Code>${driver.code}</Code>
+
+      </div>
+      `;
+
+      container.appendChild(card);
+    });
+  });
