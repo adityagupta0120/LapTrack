@@ -30,31 +30,30 @@ LapTrack is a Formula 1 fan web app built with vanilla HTML, CSS, and JavaScript
 
 ```
 LapTrack/
-├── index.html          # Landing page
-├── script.js           # Sound + redirect logic
-├── hello.css           # Landing page styles
+├── home/               # Landing page
+│   ├── index.html      # Entry point
+│   ├── hello.css       # Landing page styles
+│   └── script.js       # Sound + redirect logic
 ├── Drivers/            # Drivers page (HTML, CSS, JS, JSON, images)
 ├── TEAMS/              # Teams page (HTML, CSS, JS)
 ├── schedule/           # Schedule page (HTML, CSS, JS, JSON, images)
 ├── standings/          # Standings page (HTML, CSS, JS)
 ├── news/               # News page (HTML, CSS, JS)
-└── hii/                # Shared assets (logo, video, audio)
+└── assets/             # Shared assets (logo, video, audio)
 ```
 
 ---
 
 ## Getting Started
 
-Just open `index.html` in your browser — no build tools or installs needed.
+Just open `home/index.html` in your browser — no build tools or installs needed.
 
 > For the Teams page to load data, you'll need an internet connection since it fetches from the Ergast API.
 
----
-
 ## Assets
 
-- `hii/f1sound.mp3` — F1 engine sound played on the landing page
-- `hii/ferrari wallpaer 2.mp4` — Background video used across all pages
-- `hii/logo3.png` — LapTrack navbar logo
+- `assets/f1sound.mp3` — F1 engine sound played on the landing page
+- `assets/ferrari wallpaer 2.mp4` — Background video used across all pages
+- `assets/logo3.png` — LapTrack navbar logo
 - `Drivers/images/` — Driver portrait images
 - `schedule/images/` — Race circuit images
