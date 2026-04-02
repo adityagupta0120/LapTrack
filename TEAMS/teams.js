@@ -16,13 +16,19 @@ function display(teams) {
     cont.innerHTML += card;
   });
 }
+
+
 fetch('https://api.jolpi.ca/ergast/f1/constructors?limit=200')
   .then(res => res.json())
   .then(data => {
     all = data.MRData.ConstructorTable.Constructors;
     display(all);
   });
-searchInput.addEventListener("input", () => {
+
+
+
+
+  searchInput.addEventListener("input", () => {
   const value = searchInput.value.toLowerCase();
   const filtered = all.filter(team =>
     team.name.toLowerCase().includes(value)

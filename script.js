@@ -5,5 +5,5 @@ function playSound() {
 
     setTimeout(() => {
         window.location.href = "https://www.formula1.com/"
-    }, 11 * 1000);
+    }, 4 * 1000);
 }

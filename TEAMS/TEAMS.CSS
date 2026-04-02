@@ -3,34 +3,34 @@ body {
     font-family: Arial, sans-serif;
     color: white;
 }
+.backvd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
 body::before {
     content: "";
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.4);
     z-index: -1;
 }
-.backvd {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-}
 nav{
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: yellow;
     text-decoration: none;
-
+    position: relative;
     height: 60px;
 }
 nav .logo{
@@ -67,9 +67,8 @@ nav ul li a:hover {
 .heading {
     text-align: center;
     font-size: 70px;
-    margin-top: 60px;
+    margin-top: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
 }
 
 #team-container {
@@ -152,54 +151,46 @@ footer{
 }
 
 
-/* Mobile-Friendly Media Queries */
+/* ---------- Responsive ---------- */
 
-/* Tablets */
-@media (max-width: 1024px) {
-    .heading { font-size: 45px; }
-    nav .logo { width: 150px; }
-    nav ul li a { font-size: 16px; }
-    .card { width: 250px; }
-    #searchInput { width: 250px; }
+@media (max-width: 1200px) {
+    nav ul li { margin: 0 25px;}
+    nav ul li a { font-size: 20px; }
+    nav .logo { width: 240px;margin-top: 20px; }
+
 }
 
-/* Mobile Phones */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+    nav ul li { margin: 0 12px; }
+    nav ul li a { font-size: 15px; }
+    nav .logo { width: 200px; }
+    .heading { font-size: 42px; margin-top: 80px; }
+    #team-container { gap: 25px; padding: 20px; }
+    .card { width: 240px; }
+    #searchInput { width: 60%; }
+}
+
+@media (max-width: 650px) {
     nav {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 8px 16px;
+        justify-content: center;
     }
-    nav ul {
-        display: none; /* hide links initially */
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-        background: rgba(0,0,0,0.8);
-        border-radius: 8px;
-        padding: 10px 0;
-    }
-    nav ul.show {
-        display: flex; /* show when active */
-    }
-    nav ul li { margin: 10px 0; text-align: center; }
-    nav .menu-toggle {
-        display: block;
-        cursor: pointer;
-        font-size: 28px;
-        color: white;
-    }
-    .heading { font-size: 35px; margin-top: 50px; }
-    .btn { font-size: 16px; padding: 10px 20px; }
-    .card { width: 90%; margin: 10px auto; }
-    #searchInput { width: 90%; }
+    nav .logo { width: 160px; height: 60px; margin-top: 0; }
+    nav ul { display: flex; flex-wrap: wrap; justify-content: center; padding: 0; margin: 6px 0; }
+    nav ul li { margin: 4px 10px; }
+    nav ul li a { font-size: 13px; }
+    .heading { font-size: 32px; margin-top: 20px; }
+    #team-container { gap: 20px; padding: 15px; }
+    .card { width: calc(50% - 20px); height: auto; min-height: 150px; }
+    #searchInput { width: 80%; }
 }
 
-/* Small Phones */
-@media (max-width: 480px) {
-    .heading { font-size: 28px; margin-top: 40px; }
-    nav .logo { width: 120px; }
-    .btn { font-size: 14px; padding: 8px 15px; }
+@media (max-width: 420px) {
+    .heading { font-size: 24px; }
+    .card { width: 100%; }
+    #searchInput { width: 95%; }
 }
 
 .card {

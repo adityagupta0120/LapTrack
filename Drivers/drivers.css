@@ -20,15 +20,12 @@ html, body {
 }
 nav{
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: yellow;
     text-decoration: none;
-
+    position: relative;
     height: 60px;
 }
 nav .logo{
@@ -82,8 +79,8 @@ nav ul li a:hover {
     position: fixed;    
     top: 0;
     left: 0;
-    width: 100vw;        
-    height: 100vh;    
+    width: 100%;        
+    height: 100%;    
     object-fit: cover;   
     z-index: -1;        
 }
@@ -91,62 +88,43 @@ nav ul li a:hover {
 
 
 
-/* ---------- Existing Media Queries with Content Fix ---------- */
+/* ---------- Responsive ---------- */
 
 @media (max-width: 1200px) {
-    nav .logo { width: 250px; margin-top: 20px; }
+    nav .logo { width: 240px; }
     nav ul li { margin: 0 25px; }
     nav ul li a { font-size: 20px; }
-    .content h1 { font-size: 90px; }
-    .content a { padding: 12px 60px; font-size: 18px; }
+    .heading { font-size: 55px; }
 }
 
-@media (max-width: 992px) {
-    nav .logo { width: 200px; margin-top: 15px; }
+@media (max-width: 900px) {
+    nav .logo { width: 200px; }
     nav ul li { margin: 0 15px; }
-    nav ul li a { font-size: 18px; }
-    .content h1 { font-size: 70px; }
-    .content a { padding: 10px 50px; font-size: 16px; }
+    nav ul li a { font-size: 17px; }
+    .heading { font-size: 42px; }
+    #drivers { gap: 25px; padding: 20px; }
+    .divv { width: 260px; height: 260px; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 650px) {
     nav {
-        flex-direction: row;       /* keep nav items in line */
-        justify-content: center;
         flex-wrap: wrap;
         height: auto;
-        padding: 10px 20px;
-    }
-
-    nav ul {
-        flex-direction: row;
-        width: auto;
-        margin-top: 10px;
+        padding: 8px 16px;
         justify-content: center;
     }
-
-    nav ul li {
-        margin: 5px 10px;
-        display: inline-block;
-    }
-
-    .content {
-        position: relative;       /* was fixed, now relative */
-        top: 0;
-        transform: none;          /* remove translate */
-        padding: 20px;
-    }
-
-    .content h1 { font-size: 50px; margin-bottom: 20px; }
-    .content a { padding: 10px 40px; font-size: 15px; }
+    nav .logo { width: 160px; height: 60px; margin-top: 0; }
+    nav ul { flex-wrap: wrap; justify-content: center; padding: 0; margin: 6px 0; }
+    nav ul li { margin: 4px 10px; }
+    nav ul li a { font-size: 13px; }
+    .heading { font-size: 32px; margin-top: 10px; }
+    #drivers { gap: 20px; padding: 15px; }
+    .divv { width: calc(50% - 20px); height: 240px; }
 }
 
-@media (max-width: 480px) {
-    nav .logo { width: 150px; margin-top: 10px; }
-    nav ul li a { font-size: 14px; display: flex; flex-direction: column;}
-
-    .content h1 { font-size: 35px; margin-bottom: 15px; }
-    .content a { padding: 8px 30px; font-size: 14px; }
+@media (max-width: 420px) {
+    .heading { font-size: 24px; }
+    .divv { width: 100%; height: 220px; }
 }
 
 
@@ -192,9 +170,8 @@ nav ul li a:hover {
 .heading {
     text-align: center;
     font-size: 70px;
-    margin-top: 60px;
+    margin-top: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
-    
 }
 
