@@ -9,3 +9,7 @@ api integrated in team page
 
 home page onclick function done 
 
+drivers api made nad data shoowed
+driver page added 
+
+team and driver page fully made with api integrated

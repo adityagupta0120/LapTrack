@@ -162,36 +162,32 @@ nav ul li a:hover {
 
 .divv {
     padding: 20px;
-    width: 350px;
-    height: 350px;
+    width: 310px;
+    height: 310px;
     border-radius: 12px;
     transition: 0.3s;
     text-align: center;
     color: white;
     border: 2px solid,rgb(230, 192, 192);
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 2px solid rgb(230, 192, 192);
 }
 
 
 
 .divv:hover {
     transform: scale(1.08) translateY(-5px);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 20px rgba(242, 0, 0, 0.7);
+}
+.hello {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8));
+    border: #fff8f8;
+    border-radius: 8px;
 }
 
-
-/* trying some animatojin in drivers page */
-.divv {
-  background: linear-gradient(270deg, #000000, #450707, #000000);
-  background-size: 600% 600%;
-  animation: grad 8s ease-in-out infinite;
-  border-radius: 12px; 
-}
-@keyframes grad {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
 
 .heading {
     text-align: center;
@@ -201,3 +197,4 @@ nav ul li a:hover {
     color: white;
     
 }
+
