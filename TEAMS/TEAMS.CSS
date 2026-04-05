@@ -197,7 +197,7 @@ footer{
   background: linear-gradient(270deg, #000000, #450707, #000000);
   background-size: 600% 600%;
   animation: grad 8s ease infinite;
-  border-radius: 12px; /* optional but looks clean */
+  border-radius: 12px; 
 }
 @keyframes grad {
   0% { background-position: 0% 50%; }
