@@ -281,3 +281,22 @@ nav ul li a:hover {
     .news-heading { font-size: 28px; }
     .news-sub { font-size: 14px; }
 }
+
+/* ---------- Dark Mode Toggle ---------- */
+.dark-toggle {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Cinzel', serif;
+    cursor: pointer;
+    margin-right: 30px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+.dark-toggle:hover {
+    background: rgba(255,255,255,0.3);
+    border-color: #fff;
+}

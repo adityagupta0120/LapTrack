@@ -9,7 +9,10 @@
 </head>
 <body>
     <div class="hero">
-        <video class="backvd" autoplay muted loop src="../assets/ferrari wallpaer  2.mp4"></video>
+        <!-- Light mode video (default) -->
+        <video id="lightVid" class="backvd" autoplay muted loop src="../assets/ferrari wallpaer  2.mp4"></video>
+        <!-- Dark mode video (hidden by default) -->
+        <video id="darkVid" class="backvd" muted loop src="../assets/f1-red-bull-bolid.1920x1080.mp4" style="display:none;"></video>
 
         <nav>
             <img src="../assets/logo3.png" class="logo">
@@ -20,6 +23,7 @@
                 <li><a href="../news/news.html">News</a></li>
                 <li><a href="../standings/standings.html">Standings</a></li>
             </ul>
+            <button class="dark-toggle" onclick="toggleDark()">🌙 Dark Mode</button>
         </nav>
 
         <div class="content">
@@ -29,5 +33,6 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="../toggle.js"></script>
 </body>
 </html>

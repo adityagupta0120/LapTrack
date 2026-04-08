@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F1 Teams</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="teams.css">
 </head>
-
 <body>
-    <video class="backvd" autoplay muted loop>
-        <source src="../assets/ferrari wallpaer  2.mp4" type="video/mp4">
-    </video>
+    <video id="lightVid" class="backvd" autoplay muted loop src="../assets/ferrari wallpaer  2.mp4"></video>
+    <video id="darkVid"  class="backvd" muted loop src="../assets/f1-red-bull-bolid.1920x1080.mp4" style="display:none;"></video>
 
-    <!-- 🔝 Navbar -->
     <nav>
         <img src="../assets/logo3.png" class="logo">
-
         <ul>
             <li><a href="../home/index.html">Home</a></li>
             <li><a href="../Drivers/drivers.html">Drivers</a></li>
@@ -26,16 +20,14 @@
             <li><a href="../news/news.html">News</a></li>
             <li><a href="../standings/standings.html">Standings</a></li>
         </ul>
+        <button class="dark-toggle" onclick="toggleDark()">🌙 Dark Mode</button>
     </nav>
 
-    <!-- 🏎️ Teams Section -->
     <h1 class="heading">🏎️ F1 Teams</h1>
     <input type="text" id="searchInput" placeholder="Search your favorite team..." />
     <div id="team-container"></div>
 
-
     <script src="teams.js"></script>
-
+    <script src="../toggle.js"></script>
 </body>
-
 </html>
