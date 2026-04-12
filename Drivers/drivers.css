@@ -175,8 +175,7 @@ nav ul li a:hover {
     color: white;
 }
 
-
-/* ---------- Dark Mode Toggle ---------- */
+/*  Dark Mode */
 .dark-toggle {
     background: rgba(255,255,255,0.15);
     color: #fff;
